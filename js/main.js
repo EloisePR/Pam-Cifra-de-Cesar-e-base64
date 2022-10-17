@@ -14,3 +14,6 @@ selecione.addEventListener("click", function () {
     }
 });
 
+// Base64
+
+function base64()
