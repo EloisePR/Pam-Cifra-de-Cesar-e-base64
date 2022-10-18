@@ -6,8 +6,7 @@ body {
     box-sizing: border-box; 
     margin: 0px;
     padding: 0px;
-    font-size: 1.2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    font-size: 1.2rem; 
     background-image: linear-gradient(to right,#000000, #00008a, #000000);
     background-attachment: fixed;
  }
@@ -48,19 +47,21 @@ span {
     margin: auto;
 }
 
+/*Parte da caixa*/
 .caixa {
     background-color: #a29cf723;
     display: grid;
-    border-radius: 10px;
+    border-radius: 50px;
     margin: auto;
     margin-bottom: 20px;
-    width: 80%;
+    width: 70%;
     padding: 10px;
     color: #ffffff;
     font-family: cursive;
     font-size: 15px;
     background-position: center;
 }
+
 
 .decod {
     display: flex;
@@ -70,12 +71,12 @@ span {
 }
 
 ::selection {
-    background: #06f8f8;
+    background: #6a37f5de;
     color: rgb(0, 0, 0);
 }
 
 #mensagem {
-    background: rgba(33, 209, 253, 0.3);
+    background: rgba(10, 122, 150, 0.3);
     box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.5);
     border: none;
     border-radius: 10px;
@@ -97,7 +98,7 @@ textarea {
 }
 
 select {
-    width: 100%;
+    width: 90%;
     height: 30px;
     border-radius: 10px;
     background: rgba(33, 209, 253, 0.3);
@@ -106,7 +107,6 @@ select {
     margin-top: 10px;
     margin-bottom: 10px;
     outline: none;
-    background-position: center
 }
 
 select option {
@@ -149,6 +149,7 @@ input[type="radio"]:focus {
 }
 
 .btn {
+    width: 90%;
     display: flex;
     justify-content: center;
 }
