@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificadores</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="log">
+      <img src="./img/logof.png" alt="image" width="100" height="100">
+    </div>
+
+        <h1>DECODIFICADORES</h1>
+        <h2>base64 e Cifra_de_César</h2>
+
+    <center>
+      <div class="decod">
+        <form action="#">
+          <p><textarea name="mensagem" id="mensagem" cols="50" rows="6" placeholder="Digite seu texto..."></textarea></p>
+
+          <p>
+          <label id="selecione" for="select">Escolha um codificador</label>
+          <select name="select" class="select" id="select">
+              <option value="selecione" disabled selected>---</option>
+              <option value="base64">Base64</option>
+              <option value="cifra">Cifra de césar</option>
+          </select>
+          </p>
+
+          <p><div class="chave-container">
+              <label class="chave" for="range">Escolha a Chave</label>
+              <div class="slider-range">
+                  <input type="range" value="1" min="1" max="26" class="range" id="range" oninput="rangenumber.value=value" />
+                <input type="number" value="1" id="rangenumber" min="1" max="26" oninput="range.value=value" />
+              </div>
+          </div></p>
+
+          <p>
+          <div class="radio-button">
+              <div class="radio">
+                  <input type="radio" name="codificar" id="codificar" value="codificar" checked />
+                  <label for="codificar">Codificar mensagem</label>
+              </div>
+
+              <div class="radio">
+                  <input type="radio" name="codificar" id="decodificar" value="decodificar" />
+                  <label for="decodificar">Decodificar mensagem</label>
+              </div>
+          </div>
+          </p>
+
+          <p><textarea id="resultado" class="mensagem resultado" cols="50" rows="6" readonly
+          placeholder="Mensagem Criptografada"></textarea></p>
+
+          <div class="btn">
+              <button>Codificar Mensagem!</button>
+          </div>
+        </form>
+      </div>
+    </center>
+
+
+      <footer>
+        <div class="social">
+            <a href="https://github.com/EloisePR"><img src="./img/github.png" alt="imagem" width="30" height="30"></a>
+            <a href="https://www.linkedin.com/in/pamela-freire-epr/"><img src="./img/Linkedin.png" alt="imagem" 
+               width="35" height="35"></a>
+        </div>
+    </footer>
+    
+
+   <script src="./js/main.js"></script>
+</body>
+</html>
