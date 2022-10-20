@@ -6,15 +6,17 @@ const codificar = document.querySelector("#codificar");
 const decodificar = document.querySelector("#decodificar");
 
 // Incremento da Cifra de César
-selecione.addEventListener("click", function () {
+
+selecione.addEventListener("click",
+  () => {
     if (selecione.value == "cifra") {
       incremento.style.display = "block";
-    } 
+    }
 
     else {
       incremento.style.display = "none";
     }
-});
+  });
 
 // Base64
 
